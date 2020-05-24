@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="utf-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- custom style -->
+<style type="text/css">
+    @page { size: A4 }
+
+    .sub-header {
+        margin: 20px 0 10px 0;
+        border-bottom: 2px solid #eee;
+    }
+    .sub-header > h4 {
+        color: #007131 !important;
+        font-weight: 521;
+    }
+    .pro-title {
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body class="A4">
+    <section class="sheet padding-10mm" style="margin: 0 auto;">
+        <div _id="cv-head" class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <h2>Louis Wei</h2>
+                <p>louis@github.com</p>
+                <p>+86 12345678910</p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6" style="text-align: right;">
+                <img src="./profile.jpg" style="width: 105px; height: 120px;" class="img-rounded">
+            </div>
+        </div>
+        <div class="sub-header"><h4>教育背景</h4></div>
+        <div _id="cv-edu" class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">2012/9 - 2016/6</div>
+            <div class="col-md-3 col-sm-3 col-xs-3">新屋熊大学</div>
+            <div class="col-md-3 col-sm-3 col-xs-3">自动化专业</div>
+            <div class="col-md-3 col-sm-3 col-xs-3">本科</div>
+        </div>
+        <div _id="cv-edu" class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">2016/9 - 2019/6</div>
+            <div class="col-md-3 col-sm-3 col-xs-3">新屋熊大学</div>
+            <div class="col-md-3 col-sm-3 col-xs-3">自动化专业</div>
+            <div class="col-md-3 col-sm-3 col-xs-3">硕士</div>
+        </div>
+        <div class="sub-header"><h4>工作经历</h4></div>
+        <div _id="cv-pro">
+            <div _sign="beibei" class="row pro-title">
+                <div class="col-md-4 col-sm-4 col-xs-4">虾扯蛋公司 xcd.com</div>
+                <div class="col-md-4 col-sm-4 col-xs-4">内核开发工程师</div>
+                <div class="col-md-4 col-sm-4 col-xs-4">2019/7 - 2019/12</div>
+            </div>
+            <div _sign="beibei-projects" class="project">
+                <h5>0. Linux内核5.20开发</h5>
+                <ul>
+                    <li>提交内核补丁 1024 个</li>
+                    <li>参加Linux内核基金会全球贡献者大会</li>
+                </ul>
+            </div>
+            <div _sign="douyu" class="row pro-title">
+                <div class="col-md-4 col-sm-4 col-xs-4">虾几把搞公司 xjbg.com</div>
+                <div class="col-md-4 col-sm-4 col-xs-4">基础开发工程师</div>
+                <div class="col-md-4 col-sm-4 col-xs-4">2019/12 - Now</div>
+            </div>
+            <div _sign="douyu-projects" class="project">
+                <h5>0. 函数计算平台</h5>
+                <ul>
+                    <li>git clone https://github.com/knative/serving.git</li>
+                    <li>kubectl apply -f ./third_party/istio-stable/istio-crds.yaml</li>
+                    <li>ko apply --selector knative.dev/crd-install=true -f config/</li>
+                </ul>
+                <h5>1. 广告推荐凤巢系统</h5>
+                <ul>
+                    <li>与 Robin 过技术方案</li>
+                    <li>领导规模达十余人研发团队</li>
+                    <li>一个月完成上线，没产品经理什么事</li>
+                </ul>
+                <h5>2. 城市大脑项目</h5>
+                <ul>
+                    <li>与阿里云达成长期合作</li>
+                    <li>与王坚博士合影留恋</li>
+                    <li>致力于解决本市交通拥堵问题</li>
+                    <li>将每个人都监控起来</li>
+                </ul>
+                <h5>3. 自研3nm芯片制程工艺</h5>
+                <ul>
+                    <li>与国际芯片巨头intel达成战略合作，申请其样片学习</li>
+                    <li>亲自上阵焊板子，回流焊、波峰焊还有BGA通通不是问题</li>
+                    <li>流片成功，准备支持华为</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-header"><h4>专业技能</h4></div>
+        <div _id="cv-skill" class="row">
+            <div class="col-md-offset-1 col-md-9">
+                <span class="label label-default">Golang</span>
+                <span class="label label-default">Python</span>
+                <span class="label label-default">C</span>
+                <span class="label label-default">焊板子</span>
+            </div>
+        </div>
+        <div class="sub-header"><h4>个人爱好</h4></div>
+        <div _id="cv-hobby">
+            <ul>
+                <li>开摩托</li>
+                <li>唱，跳，Rap和🏀</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
